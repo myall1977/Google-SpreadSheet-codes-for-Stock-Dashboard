@@ -24,9 +24,16 @@
 - Coinone 암호화폐 실시간 가격 : https://api.coinone.co.kr/ticker/?currency=all&format=json
 
 5. Daum stock 및 Kakao Stock data parsing script
-- importDAUMSTOCK.gs : 실시간 전종목 가격정보를 가져와서 Parsing하는 script
-- investors.gs : 수급 data를 가져와서 parsing
+# importDAUMSTOCK.gs : 실시간 전종목 가격정보를 가져와서 Parsing하는 script
+- 사용예제
+=IMPORTDAUMSTOCK("http://finance.daum.net/xml/xmlallpanel.daum?stype=P&type=S")
+# investors.gs : 수급 data를 가져와서 parsing
+- 사용예제
+=ANALYSISINVESTORS("http://stock.kakao.com/api/securities/KOREA-E4012001/investors.json?limit=18")
 
 6. 주식 거래 수수료 계산 script
 - stock_calc.gs : NH투자증권 및 유안타증권 의 수수료 계산 script
+- 사용 예제
+=STOCKBUY(C4,F4,G4)
+=STOCKSELL(C4,D4,I4,J4)
 
