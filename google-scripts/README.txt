@@ -34,6 +34,6 @@
 6. 주식 거래 수수료 계산 script
 - stock_calc.gs : NH투자증권 및 유안타증권 의 수수료 계산 script
 - 사용 예제
-=STOCKBUY(C4,F4,G4)
-=STOCKSELL(C4,D4,I4,J4)
+=STOCKBUY(증권사,주식수,Price)
+=STOCKSELL(증권사,Type,주식수,Price)
 
